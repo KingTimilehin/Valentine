@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff1e56, #ffb3c1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+.val-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.btns {
+  margin-top: 30px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#yesBtn {
+  background: #00c853;
+  color: white;
+}
+
+#noBtn {
+  background: #ff1744;
+  color: white;
+  position: absolute;
+}
+
+#result {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
