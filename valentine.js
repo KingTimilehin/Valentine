@@ -28,7 +28,7 @@ function moveNoButton() {
   const x = Math.random() * (containerWidth - btnWidth);
   const y = Math.random() * (containerHeight - btnHeight);
 
-  noBtn.style.position = "absolute";
+  noBtn.style.position = "relative";
   noBtn.style.left = `${x}px`;
   noBtn.style.top = `${y}px`;
 }
@@ -136,3 +136,4 @@ function startConfetti() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }, 5000);
 }
+
