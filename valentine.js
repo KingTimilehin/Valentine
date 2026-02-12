@@ -17,14 +17,21 @@ if (name) {
 function moveNoButton() {
   if (isAccepted) return;
 
-  const x = Math.random() * (window.innerWidth - 120);
-  const y = Math.random() * (window.innerHeight - 60);
+  const btnContainer = document.querySelector(".btns");
 
+  const containerWidth = btnContainer.offsetWidth;
+  const containerHeight = btnContainer.offsetHeight;
+
+  const btnWidth = noBtn.offsetWidth;
+  const btnHeight = noBtn.offsetHeight;
+
+  const x = Math.random() * (containerWidth - btnWidth);
+  const y = Math.random() * (containerHeight - btnHeight);
+
+  noBtn.style.position = "absolute";
   noBtn.style.left = `${x}px`;
   noBtn.style.top = `${y}px`;
 }
-
-
 noBtn.addEventListener("mouseover", moveNoButton);
 
 
