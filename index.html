@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Proposal Link Generator ❤</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentine Invite 💘</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>💘 Valentine Link Generator💘</h1>
-        <p>A cute link to send to your babe ❤😭</p>
-        <input type="text" id="nameInput" placeholder="Enter her name... ">
-        <button id="generateBtn">Generate Link</button>
 
-        <div class="link-box" id="linkBox">
-            <p>Your Valentine Link:</p>
-            <input type="text" id="valLink" readonly>
-            <button id="copyBtn">Copy Link</button>
-        </div>
+  <div class="hearts"></div>
+
+  <main class="container">
+    <div class="card">
+      <h1>💘 Valentine Invite Generator 💘</h1>
+      <p class="subtitle">
+        Create a cute Valentine message link and send it to your babe 😭❤️
+      </p>
+
+      <div class="form">
+        <label for="nameInput">Enter your babe name:</label>
+        <input type="text" id="nameInput" placeholder="e.g. Zeenah 💕" />
+
+        <button id="generateBtn">Generate Valentine Link 💌</button>
+      </div>
+
+      <div id="linkBox" class="linkBox">
+        <p>Your Valentine Link is ready 👇</p>
+        <input type="text" id="valLink" readonly />
+        <button id="copyBtn">Copy Link</button>
+      </div>
+
+      <p class="footerText">
+        Made with ❤️ by Timi
+      </p>
     </div>
-    <script src="script.js"></script>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
