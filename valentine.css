@@ -93,6 +93,11 @@ h1 {
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 button {
@@ -116,7 +121,7 @@ button {
 #noBtn {
   background: #ff1744;
   color: white;
-  position: absolute;
+  position: relative;
 }
 
 #result {
@@ -137,6 +142,9 @@ button {
   z-index: 5;
 }
 
+#yesBtn, #noBtn {
+  min-width: 120px;
+}
 
 @media (max-width: 480px) {
   h1 {
